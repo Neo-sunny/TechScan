@@ -1,0 +1,49 @@
+
+.selected {
+    background-color: rgb(109, 204, 80) !important;
+    color: white;
+  }
+  .repoes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 10em;
+  }
+  .repoes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(129, 130, 202);
+    margin: .5em;
+    padding: .3em 0;
+    height: 2.6em;
+    border-radius: 4px;
+  }
+  .repoes li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .repoes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  repoes .text {
+    position: relative;
+    top: -3px;
+  }
+  .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  mat-grid-tile {
+    background: lightblue;
+  }
+  .example-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

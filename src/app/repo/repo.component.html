@@ -1,0 +1,28 @@
+
+<!--
+<ul class="repoes">
+  <li *ngFor="let repo of _repoArray " (click)="onSelect(repo)"
+  [class.selected]="repo === selectedRepo" >
+    <h2></h2>
+    <span class="badge">{{repo.language | uppercase }}</span>
+  </li>
+</ul>
+<app-repo-list [repo]="selectedRepo"></app-repo-list>
+-->
+<div class="container">
+<div  *ngFor="let lang of langArray " >
+<mat-grid-list cols="5" rowHeight="2:1">
+  <mat-grid-tile>
+    <div class="button-row">
+      <button mat-raised-button color="primary"  (click)="onSelect(lang)">{{lang | uppercase }}</button>
+    </div>
+  </mat-grid-tile>
+ <!--     
+  <mat-grid-tile (click)="onSelect(repo)">{{repo.language | uppercase }}
+      </mat-grid-tile>
+       <mat-grid-tile>{{repo.description}}</mat-grid-tile>
+  -->
+</mat-grid-list>
+</div>
+
+</div>
