@@ -6,7 +6,7 @@ import { RepoListComponent } from './repo-list/repo-list.component'
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'langs', component: RepoComponent},
- // { path: 'detail/:id', component: RepoListComponent }
+  { path: 'langs/:value', component: RepoListComponent }
 //  { path: 'dashboard', component: DashboardComponent },
 
 ];

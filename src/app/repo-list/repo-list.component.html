@@ -1,0 +1,14 @@
+<div *ngIf="repo">
+<!--
+  for selected repo name display the list of repository for that language
+
+-->
+    <h2>{{ repo.name | uppercase }}</h2>
+    <div><span class="badge1">RepoId: </span>{{repo.id}}</div>
+    <div>
+      <label>RepoName:
+        <input [(ngModel)]="repo.name" placeholder="name"/>
+      </label>
+    </div>
+  
+  </div>
